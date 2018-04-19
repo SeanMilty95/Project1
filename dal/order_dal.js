@@ -5,7 +5,7 @@ var connection = mysql.createConnection(db.config);
 
 exports.getAll = function(callback)
 {
-    var query = 'SELECT * FROM order_;';
+    var query = 'SELECT * FROM order_view;';
 
     connection.query(query, function(err, result)
     {
