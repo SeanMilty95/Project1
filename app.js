@@ -12,6 +12,7 @@ var order = require('./routes/order');
 var categories = require('./routes/categories');
 var productlist = require('./routes/productlist');
 var refersto = require('./routes/refersto');
+var invoice = require('./routes/invoice');
 
 var app = express();
 
@@ -34,6 +35,7 @@ app.use('/order', order);
 app.use('/categories', categories);
 app.use('/productlist', productlist);
 app.use('/refersto', refersto);
+app.use('/invoice', invoice);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

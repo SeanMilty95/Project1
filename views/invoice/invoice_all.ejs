@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice - View All</title>
+</head>
+    <body>
+        <h1>Invoices</h1>
+
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Order Number</th>
+                <th>Product Number</th>
+
+            </tr>
+            <% for(var i = 0; i < invoice.length; i++) { %>
+                <tr>
+                    <td><%= invoice[i]._name %></td>
+                    <td><%= invoice[i].order_num %></td>
+                    <td><%= invoice[i].product_num %></td>
+
+                </tr>
+            <% } %>
+        </table>
+
+    </body>
+</html>
